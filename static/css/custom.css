@@ -1,10 +1,30 @@
-
-
-body { 
+body {
     font-family: 'Hack', 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px
 }
+
 .markdown-section {
-  max-width: 600px;
-  margin-left: 10px;
+    max-width: 600px;
+    margin-left: 10px;
+}
+
+.giscus {
+    max-width: 600px;
+    margin-left: 10px;
+}
+
+footer a {
+    color: var(--theme-color, #ea6f5a);
+    font-weight: 600;
+}
+
+footer {
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin-left: 10px;
+}
+
+section hr {
+    max-width: 600px;
+    margin-left: 10px;
 }

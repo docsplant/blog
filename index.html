@@ -13,6 +13,7 @@
 </head>
 <body>
   <div id="app"></div>
+  <!-- Docsify v4 -->
   <script>
     window.$docsify = {
       name: 'blog@docsplant',
@@ -23,25 +24,26 @@
         crossChapter: true,
         crossChapterText: true,
       },
-      plugins: [
-        function(hook) {
-          var footer = [
-            '<hr/>',
-            '<footer>',
-            '<span>Owned and maintained by <a href="https://docsplant.com" target="_blank">docsplant</a>.</span><br>',
-            '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
-            '</footer>'
-          ].join('');
-
-          hook.afterEach(function(html) {
-            return html + footer;
-          });
-        }
-      ]
     }
   </script>
-  <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Docsify Plugins -->
+  <script src="static/js/custom_plugins.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- Giscus -->
+  <script src="https://giscus.app/client.js"
+    data-repo="docsplant/blog"
+    data-repo-id="R_kgDOIUCI2g"
+    data-category="General"
+    data-category-id="DIC_kwDOIUCI2s4CSNbG"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="1"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
 </body>
 </html>
