@@ -17,10 +17,11 @@ function install(hook) {
 
         const footer = document.createElement("footer");
         footer.innerHTML = [
-            '<span>Owned and maintained by <a href="https://docsplant.com" ',
-            'target="_blank">docsplant</a> and </span>',
-            '<span>proudly published with ',
-            '<a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.',
+            '<p>Proudly published with ',
+            '<a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a></p>',
+            '<p><a href="https://docsplant.com/en/about.html" class="internal_link" target="_blank">About</a> ',
+            '<a href="https://docsplant.com/en/legal.html" class="internal_link" target="_blank">Legal Notice</a> ',
+            '<a href="https://docsplant.com/en/privacy.html" class="internal_link" target="_blank">Privacy</p>'
         ].join('');
         content.appendChild(footer);
     });
